@@ -47,3 +47,20 @@ const addElement = (list, element) =>{
 }
 addElement(list, "Gustav")
 console.table(list)
+
+let schools = {
+	"School#1" : 1,
+	"School#2" : 2,
+	"School#3" : 5
+}
+
+const convertToObject = object => {
+	return array = Object.keys(schools).map(key => 
+		({
+
+			name: key,
+			wins: schools[key]
+		})
+	)
+}
+console.log(convertToObject(schools))
